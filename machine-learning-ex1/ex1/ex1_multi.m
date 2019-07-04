@@ -85,7 +85,7 @@ X = [ones(m, 1) X];
 fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
-alpha = 0.01;
+alpha =0.01;
 num_iters = 400;
 
 % Init Theta and Run Gradient Descent 
@@ -154,7 +154,10 @@ fprintf('\n');
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
-price = 0; % You should change this
+ % You should change this
+size_rooms=([1650 3]-mu)./sigma;
+input=[1 size_rooms];
+price = input*theta; % You should change this
 
 
 % ============================================================
