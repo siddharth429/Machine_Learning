@@ -30,7 +30,7 @@ mu=mean(X_norm);
 sigma=std(X_norm);
 X_norm=(X_norm-mu)./sigma;
 
-siddharth
+
 
 
 
